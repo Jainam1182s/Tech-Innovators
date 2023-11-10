@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | Adult-Connect</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/event.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="index.html">Adult-Connect</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header section-->
+    <div class="header">
+        <div class="img-parent">
+            <div class="img">
+                <img src="club.jpg" alt="">
+            </div>
+            <div class="img-overlay"></div>
+        </div>
+        <div class="img-content">
+            <h2>Clubs</h2>
+            <span>Seniors Unite: <br>
+                  Connecting Hearts, Creating Memories.<br>
+                  Where Every Moment Counts, Friendship Flourishes, and the Golden Years Sparkle with Shared Joy.</span>
+        </div>
+    </div>
+
+    <!-- event section -->
+    <div class="container event">
+        <div class="row justify-content-center text-center">
+            <div class="offset-sm-1 col-sm-5">
+                <img src="chess.jpg" class="img-fluid" alt="">
+                <div class="event-content">
+                    <h4>Chess club</h4>
+                    <span> "Strategic Moves, Lasting Bonds."</span><br>
+                    <a href="">join</a>
+                </div>
+            </div>
+            <div class="offset-sm-1 col-sm-5">
+                <img src="yoga.jpg" class="img-fluid" alt="">
+                <div class="event-content">
+                    <h4>Yoga club</h4>
+                    <span>"Flex, Flow, Flourish: Wellness for Every Senior." </span><br>
+                    <a href="">join</a>
+                </div>
+            </div>
+            <div class="offset-sm-1 col-sm-5">
+                <img src="gardening.jpg" class="img-fluid" alt="">
+                <div class="event-content">
+                    <h4>Gardening club</h4>
+                    <span>"Blooms of Friendship: Where Gardens and Hearts Flourish."</span><br>
+                    <a href="">join</a>
+                </div>
+            </div>
+            <div class="offset-sm-1 col-sm-5">
+                <img src="book.jpg" class="img-fluid" alt="">
+                <div class="event-content">
+                    <h4>Book club</h4>
+                    <span>"Turning Pages, Sharing Stories, Building Connections." </span><br>
+                    <a href="">join</a>
+                </div>
+            </div>
+            <div class="offset-sm-1 col-sm-5">
+                <img src="art and craft.jpg" class="img-fluid" alt="">
+                <div class="event-content">
+                    <h4>Art and Craft club</h4>
+                    <span> "Crafting Memories, Painting Tomorrows."</span><br>
+                    <a href="">join</a>
+                </div>
+            </div>
+            <div class="offset-sm-1 col-sm-5">
+                <img src="music.jpg" class="img-fluid" alt="">
+                <div class="event-content">
+                    <h4>Music club</h4>
+                    <span>"Harmony of Ages: Where Music Unites Generations." </span><br>
+                    <a href="">join</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <footer>
+        <div class="container">
+            <center>
+                <p>Copyright &copy; Adult-Connect. All Rights Reserved  |  Contact Us: +91 90000 00000</p>	
+            </center>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).scroll(function () {
+            $(".navbar").toggleClass("scroll", $(this).scrollTop > $(".navbar").height());
+        })
+    </script>
+
+</html>
