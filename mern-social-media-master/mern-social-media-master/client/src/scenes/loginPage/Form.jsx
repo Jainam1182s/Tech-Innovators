@@ -162,7 +162,7 @@ const Form = () => {
                   sx={{ gridColumn: "span 4" }}
                 />
                 <TextField
-                  label="Occupation"
+                  label="Interest"
                   onBlur={handleBlur}
                   onChange={handleChange}
                   value={values.occupation}

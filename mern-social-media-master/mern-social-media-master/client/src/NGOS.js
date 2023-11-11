@@ -18,37 +18,37 @@ const ngosData = [
         name: 'Smile Foundation',
         description: 'Smile Foundation is a non-profit organization that works for the welfare of children and their families through intensive programmes focused on education, healthcare, livelihood, and women empowerment.',
         imageSrc: SF,
-        website: 'https://www.smilefoundationindia.org/'
+        links: 'https://www.smilefoundationindia.org/'
     },
     {
         name: 'Akshaya Patra',
         description: 'Akshaya Patra is a non-profit organization that works towards fighting issues like hunger and malnutrition in India. The organization strives to eliminate classroom hunger by implementing the Mid-Day Meal Scheme in the government schools and government-aided schools.',
         imageSrc: AP,
-        website: 'https://www.akshayapatra.org/'
+        links: 'https://www.akshayapatra.org/'
     },
     {
         name: 'Age-Well Foundation',
         description: 'Age-Well Foundation is a non-profit organization that works towards improving the quality of life of senior citizens in India. The organization provides various services like healthcare, financial assistance, and emotional support to the elderly.',
         imageSrc: AW,
-        website: 'https://www.agewellfoundation.org/'
+        links: 'https://www.agewellfoundation.org/'
     },
     {
         name: 'Dignity Foundation',
         description: 'Dignity Foundation is a non-profit organization that works towards improving the quality of life of senior citizens in India. The organization provides various services like healthcare, financial assistance, and emotional support to the elderly.',
         imageSrc: DF,
-        website: 'https://www.dignityfoundation.com/'
+        links: 'https://www.dignityfoundation.com/'
     },
     {
         name: 'Old-Age Solutions',
         description: 'Old-Age Solutions is a non-profit organization that works towards improving the quality of life of senior citizens in India. The organization provides various services like healthcare, financial assistance, and emotional support to the elderly.',
         imageSrc: OA,
-        website: 'https://www.oldagesolutions.org/'
+        links: 'https://www.oldagesolutions.org/'
     },
     {
         name: 'Maya Care Foundation',
         description: 'Maya Care Foundation is a non-profit organization that works towards improving the quality of life of senior citizens in India. The organization provides various services like healthcare, financial assistance, and emotional support to the elderly.',
         imageSrc: MCF,
-        website: 'https://mayacare.org/'
+        links: 'https://mayacare.org/'
     }
     // Add more NGOs as needed
 ];
@@ -63,7 +63,7 @@ const NgosPage = () => {
   );
 
   return (
-    <div className="container bg-success mx-auto mt-4 w-screen  p-4">
+    <div className="container mx-auto mt-4 w-screen  p-4">
      
 
      
@@ -85,7 +85,7 @@ const NgosPage = () => {
               <div className="card-body">
                 <h4 className="text-primary font-weight-bold mb-2">{ngo.name}</h4>
                 <p className="mt-2">{ngo.description}</p>
-                <a href="#" className="btn btn-primary mt-4">Join</a>
+                <a href={ngo.links} className=" position:absolute mb-0 btn btn-primary mt-4">Join</a>
               </div>
             </div>
           </div>

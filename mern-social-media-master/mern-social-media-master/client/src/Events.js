@@ -13,36 +13,42 @@ const eventsData = [
     date: '23/11/2023',
     description: 'Rediscover Your Stride: Embrace the Journey at  Senior Marathon!',
     imageSrc: Marathonimg,
+    link:"https://www.ahmedabadmarathon.com/"
   },
   {
     name: 'Cycling',
     date: '29/11/2023',
     description: 'Rediscover the Joy of Pedaling: Embrace the Ride, Age with Pride.',
     imageSrc: Cyclingimg,
+    link:"https://cyclify.in/cycling-competition-in-india/"
   },
   {
     name: 'Music Therapy Sessions',
     date: '15/11/2023',
     description: 'Rediscover Harmony: Embrace the Rhythm of Life in Our Music Therapy Sessions for Seniors.',
     imageSrc: MusicTherapyimg,
+    link:"https://tipsforfamilies.com/music-therapy-for-seniors/"
   },
   {
     name: 'Senior Cinema Nights',
     date: '19/11/2023',
     description: 'Embrace the magic of ageless tales. Join our Senior Cinema Night, where memories unfold, and laughter echoes through timeless films.',
     imageSrc: CinemaNightsimg,
+    link:"https://www.ioaging.org/senior-socialization/movie-night-for-seniors-a-celebration-of-the-past-and-present/"
   },
   {
     name: 'Memory Games Tournament',
     date: '27/11/2023',
     description: 'Unleash the power of your mind! Join the Memory Game Tournament.',
     imageSrc: MemoryGamesimg,
+    link:"https://artofmemory.com/memory-league/"
   },
   {
     name: 'Local History Tours',
     date: '05/12/2023',
     description: 'Rediscover your roots, embrace the past. Join local history tours.',
     imageSrc: HistoryToursimg,
+    link:"https://www.veenaworld.com/speciality-tours/seniors-special-tour-packages/spl"
   },
 ];
 
@@ -54,7 +60,7 @@ const EventList = () => {
     event.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
   return (
-    <div className="container bg-danger mx-auto  mt-4  w-screen h-screen p-4">
+    <div className="container mx-auto  mt-4  w-screen h-screen p-4">
     <div className="mb-4">
       <input
         type="text"
@@ -74,7 +80,7 @@ const EventList = () => {
               <h4 className="text-primary font-weight-bold mb-2">{event.name}</h4>
               <h6>Date: {event.date}</h6>
               <p className="mt-2">{event.description}</p>
-              <a href="#" className="btn btn-primary mt-4">Join</a>
+              <a href={event.link} className="btn btn-primary mt-4">Join</a>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ const PathSelectionPage = () => {
         <div className="col-md-6">
           <h2 className="text-center mb-4">Select Your Path</h2>
 
-          <div className="card-deck">
+          <div className="card-deck mb-4">
             <div className="card text-center">
               <Link to="/events" className="card-link">
                 <FontAwesomeIcon icon={faCalendarAlt} className="card-img-top icon" />
@@ -23,8 +23,8 @@ const PathSelectionPage = () => {
               </Link>
             </div>
 
-            <div className="card text-center">
-              <Link to="/clubs" className="card-link">
+            <div className="card text-center mt-4">
+              <Link to="/club" className="card-link">
                 <FontAwesomeIcon icon={faUsers} className="card-img-top icon" />
                 <div className="card-body">
                   <h5 className="card-title">Clubs</h5>
@@ -32,7 +32,7 @@ const PathSelectionPage = () => {
               </Link>
             </div>
 
-            <div className="card text-center">
+            <div className="card text-center mt-4 ">
               <Link to="/home" className="card-link">
                 <FontAwesomeIcon icon={faShareAlt} className="card-img-top icon" />
                 <div className="card-body">
@@ -41,8 +41,8 @@ const PathSelectionPage = () => {
               </Link>
             </div>
 
-            <div className="card text-center">
-              <Link to="/ngos" className="card-link">
+            <div className="card text-center mt-4 ">
+              <Link to="/NGO" className="card-link">
                 <FontAwesomeIcon icon={faHandsHelping} className="card-img-top icon" />
                 <div className="card-body">
                   <h5 className="card-title">NGOs</h5>
